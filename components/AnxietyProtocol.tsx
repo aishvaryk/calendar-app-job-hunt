@@ -43,7 +43,6 @@ const AnxietyProtocol: React.FC = () => {
                 <div className="mt-4 pt-4 border-t border-orange-100 text-orange-900 text-sm space-y-2 animate-in fade-in">
                   <p className="font-bold">• Stop applications for the day.</p>
                   <p>• Music, comedy, outing.</p>
-                  <p>• Talk to boyfriend.</p>
                   <p>• Review portfolio highlights.</p>
                 </div>
              )}

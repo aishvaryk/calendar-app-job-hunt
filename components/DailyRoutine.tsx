@@ -77,7 +77,7 @@ const DailyRoutine: React.FC = () => {
               <h3 className="font-medium text-stone-800 flex items-center gap-2 mb-2">
                 <Coffee size={18} className="text-stone-400"/> Priority: Rest
               </h3>
-              <p className="text-sm text-stone-600">Emotional rest, social time, boyfriend time, outings.</p>
+              <p className="text-sm text-stone-600">Emotional rest, social time, outings.</p>
             </div>
              <div className="p-4 bg-white/60 backdrop-blur-md rounded-xl shadow-sm border border-stone-100 hover:border-stone-200 transition-colors">
               <h3 className="font-medium text-stone-800 flex items-center gap-2 mb-2">
