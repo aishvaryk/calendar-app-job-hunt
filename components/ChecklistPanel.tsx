@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { WEEKLY_CHECKLIST, MONTHLY_GOALS } from '../constants';
 import { CheckCircle2, Circle } from 'lucide-react';
@@ -48,9 +49,9 @@ const ChecklistPanel: React.FC = () => {
         </div>
       ) : (
         <div className="animate-in fade-in slide-in-from-bottom-2 duration-300 grid grid-cols-1 md:grid-cols-3 gap-8">
-           <MonthColumn title="December" items={MONTHLY_GOALS.december} isLast={false} />
-           <MonthColumn title="January" items={MONTHLY_GOALS.january} isLast={false} />
-           <MonthColumn title="February" items={MONTHLY_GOALS.february} isLast={true} />
+           <MonthColumn title="Month 1" items={MONTHLY_GOALS.phase1} isLast={false} />
+           <MonthColumn title="Month 2" items={MONTHLY_GOALS.phase2} isLast={false} />
+           <MonthColumn title="Month 3" items={MONTHLY_GOALS.phase3} isLast={true} />
         </div>
       )}
     </div>

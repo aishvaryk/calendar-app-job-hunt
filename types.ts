@@ -1,3 +1,4 @@
+
 export enum DayType {
   WEEKDAY = 'WEEKDAY',
   WEEKEND = 'WEEKEND',
@@ -9,6 +10,7 @@ export interface CalendarDay {
   date: Date;
   type: DayType;
   label?: string;
+  isPast?: boolean;
 }
 
 export interface ChecklistItem {
@@ -16,6 +18,13 @@ export interface ChecklistItem {
   text: string;
   subtext?: string;
   target?: string;
+}
+
+export interface Task {
+  id: string;
+  text: string;
+  completed: boolean;
+  isCustom?: boolean;
 }
 
 export interface SectionProps {

@@ -1,4 +1,5 @@
-import { ChecklistItem } from './types';
+
+import { ChecklistItem, Task } from './types';
 
 export const PROFILE = {
   name: "Bhavika",
@@ -17,6 +18,14 @@ export const QUOTES = {
   philosophy: "Talent is stable, market timing is temporary.",
 };
 
+export const DEFAULT_DAILY_TASKS: Task[] = [
+  { id: 'def-1', text: '10-15 Job Applications', completed: false },
+  { id: 'def-2', text: 'Networking Outreach (1 person)', completed: false },
+  { id: 'def-3', text: 'Skill/Portfolio Work (45 mins)', completed: false },
+  { id: 'def-4', text: 'Gym / Physical Movement', completed: false },
+  { id: 'def-5', text: 'Emotional Grounding / Journal', completed: false },
+];
+
 export const WEEKLY_CHECKLIST: ChecklistItem[] = [
   { id: 'w1', text: 'Job Applications', target: '60 (40-60 in slowdown)', subtext: 'Automation allowed, all channels.' },
   { id: 'w2', text: 'Skill / Growth', target: '3-5 Hours', subtext: 'UX writing, portfolio refinement.' },
@@ -26,19 +35,19 @@ export const WEEKLY_CHECKLIST: ChecklistItem[] = [
 ];
 
 export const MONTHLY_GOALS = {
-  december: [
+  phase1: [
     "200–240 Cumulative Applications",
-    "Observe emotional resilience during slowdown",
+    "Observe emotional resilience",
     "Light portfolio review",
     "Establish routine momentum"
   ],
-  january: [
+  phase2: [
     "300–350 Cumulative Applications",
     "Gather interview insights",
     "Fine-tune resume/portfolio based on feedback",
     "Reduce emotional spirals"
   ],
-  february: [
+  phase3: [
     "450–550 Cumulative Applications",
     "Interviews across multiple stages",
     "Strong emotional resilience",
